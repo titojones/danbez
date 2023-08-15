@@ -1,6 +1,6 @@
 .--header-wrapper {
   position: fixed;
-  margin-inline: auto;
+
   width: 100%;
   top: 0;
   left: 0;
@@ -11,6 +11,8 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  max-width: 1200px;
+  margin-inline: auto;
   padding: 1rem 1.3rem;
 }
 .--logo-header {
@@ -72,7 +74,21 @@
 .hamburger.open .hamburger-line:nth-child(3) {
   transform: rotate(-45deg) translate(4px, -4px);
 }
-
+.--web-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 31px;
+}
+.--web-menu a {
+  position: relative;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--greymain);
+}
 .--mobile-wrapper {
   position: fixed;
   top: 0;
