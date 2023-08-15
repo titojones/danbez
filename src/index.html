@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dan Bez - Fitness Coach</title>
+    <meta
+      name="description"
+      content="Transform your life with Dan Bez, a seasoned fitness coach and NPC classic physique bodybuilder. Achieve your fitness goals with expert guidance!"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/images/danbez-logo-icon.svg"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/root.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/header.css" />
+  </head>
+  <body>
+    <div class="--main-wrapper">
+      <header class="--header-wrapper">
+        <nav class="--header-container">
+          <label for="" class="--logo-header"
+            ><span>Dan</span> <span>Bez</span></label
+          >
+          <div class="menutoogler">
+            <div class="hamburger">
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </div>
+          </div>
+          <div class="--mobile-wrapper">
+            <div class="overlay"></div>
+            <ul class="--mobile-container">
+              <li><a href="#" rel="no referrer">Home</a></li>
+              <li><a href="#" rel="no referrer">About</a></li>
+              <li><a href="#" rel="no referrer">Service</a></li>
+              <li><a href="#" rel="no referrer">Contact</a></li>
+              <button class="ctajoin">Join Now</button>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section></section>
+      </main>
+      <footer></footer>
+    </div>
+    <script>
+      const menuToggler = document.querySelector(".menutoogler");
+      const hamburger = document.querySelector(".hamburger");
+      const mobileMenu = document.querySelector(".--mobile-wrapper");
+      const toggleMenu = () => {
+        hamburger.classList.toggle("open");
+        mobileMenu.classList.toggle("active");
+      };
+
+      menuToggler.addEventListener("click", toggleMenu);
+    </script>
+  </body>
+</html>
