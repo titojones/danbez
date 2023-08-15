@@ -117,3 +117,16 @@
     top: calc(-30% - 30px);
   }
 }
+
+@media screen and (min-width: 2000px) {
+  .--flex-dumbell-wrapper {
+    width: 123px;
+    height: 123px;
+    top: 22%;
+    right: calc(49.5% - 49.5px);
+  }
+  .--flex-dumbell-container {
+    width: 106px;
+    height: 106px;
+  }
+}
