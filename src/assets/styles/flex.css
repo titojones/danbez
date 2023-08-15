@@ -1,0 +1,68 @@
+.--flex-wrapper {
+  position: relative;
+  margin: 0 auto;
+  min-height: 246px;
+  background-color: #1e1e1e;
+}
+
+.--flex-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.--flex-image {
+  width: 100%;
+  height: auto;
+  min-width: 1440px;
+}
+
+.--flex-dumbell-wrapper {
+  position: absolute;
+  top: 15%;
+  right: calc(50% - 50px);
+  border-radius: 100%;
+  width: 93px;
+  height: 93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(238, 238, 238, 0.1);
+}
+
+.--flex-dumbell-container {
+  border-radius: 100%;
+  width: 76px;
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+}
+
+.--flex-dumbell-container img {
+  width: 35px;
+  height: 35px;
+}
+
+.--follow-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.--follow-image {
+  width: 100%;
+  max-width: 1120px;
+  z-index: 100;
+}
+
+.--follow-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
