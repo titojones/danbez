@@ -1,6 +1,6 @@
 .--header-wrapper {
   position: fixed;
-  margin-inline: auto;
+
   width: 100%;
   top: 0;
   left: 0;
@@ -11,6 +11,8 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  max-width: 1200px;
+  margin-inline: auto;
   padding: 1rem 1.3rem;
 }
 .--logo-header {
@@ -47,7 +49,7 @@
   display: block;
   height: 3px;
   width: 30px;
-  background-color: #333;
+  background-color: var(--whitemain);
   border-radius: 2px;
 }
 
@@ -62,6 +64,7 @@
 }
 
 .hamburger.open .hamburger-line:nth-child(1) {
+  background-color: var(--blackmain);
   transform: rotate(45deg) translate(5px, 5px);
 }
 
@@ -70,9 +73,31 @@
 }
 
 .hamburger.open .hamburger-line:nth-child(3) {
+  background-color: var(--blackmain);
   transform: rotate(-45deg) translate(4px, -4px);
 }
-
+.--web-menu {
+  display: none;
+}
+.--web-menu a {
+  position: relative;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--greymain);
+}
+.--web-menu a.active::before {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  width: 50%;
+  height: 2px;
+  background-color: var(--orangemain);
+  transition: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .--mobile-wrapper {
   position: fixed;
   top: 0;
@@ -147,9 +172,21 @@
   border: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
+  .--web-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 31px;
+  }
   .menutoogler,
   .--mobile-wrapper {
     display: none;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  .--header-container {
+    padding: 1rem 2.5rem;
   }
 }

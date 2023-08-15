@@ -12,9 +12,9 @@
   --orangemain: #e92b2b;
   --blackmain: #1e1e1e;
   --whitemain: #eee;
+  --greymain: rgba(238, 238, 238, 0.7);
 }
 .--main-wrapper {
   position: relative;
-  max-width: 1440px;
   margin-inline: auto;
 }
