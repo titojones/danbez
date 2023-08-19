@@ -13,6 +13,7 @@
   --blackmain: #1e1e1e;
   --whitemain: #eee;
   --greymain: rgba(238, 238, 238, 0.7);
+  --greysecondary: #7b7b7b7b;
 }
 .--main-wrapper {
   position: relative;

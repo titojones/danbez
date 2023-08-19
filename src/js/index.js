@@ -8,6 +8,8 @@ const toggleMenu = () => {
   mobileMenu.classList.toggle("active");
 };
 
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
 menuToggler.addEventListener("click", toggleMenu);
 menuLinks.forEach((link) => {
   link.addEventListener("click", (event) => {

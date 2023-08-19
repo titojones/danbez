@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/root.css" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/footer.css" />
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
     <link
@@ -218,8 +219,57 @@
           </section>
         </div>
       </main>
-      <footer></footer>
+      <footer class="footer-section">
+        <div class="footer-container">
+          <div class="footer-brand-logo">
+            <img src="./assets/images/danbez-logo-icon.svg" alt="logo" />
+            <p>©<span id="year"></span> Dan Bez. All rights reserved</p>
+          </div>
+          <div class="links-footer-container">
+            <p>Home</p>
+            <p>About</p>
+            <p>Service</p>
+            <p>Contacts</p>
+          </div>
+          <div class="follow-container">
+            <p>Follow me on</p>
+            <div class="socials-icons-footer">
+              <div class="socials-logo">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </div>
+              <div class="socials-logo">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </div>
+              <div class="socials-logo">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="subscribe-container">
+            <label>Subscribe</label>
+            <div class="input-wrapper">
+              <input
+                class="text-input"
+                type="text"
+                placeholder="Enter your email"
+              />
+
+              <button class="submit-btn">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
